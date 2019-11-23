@@ -27,7 +27,8 @@ body {
           bottom: 0;
           right: 0;
           width: 56px;
-          line-height: 40px;
+          line-height:38px;
+          border: 1px solid #0397D6;
           border-radius: 0 5px 5px 0;
         }
         input{
@@ -42,6 +43,9 @@ body {
       }
       .movie-listdetails{
         margin-top:20px;
+        @media (max-width:767px){
+          text-align: center;
+        }
       }
   }
 }
