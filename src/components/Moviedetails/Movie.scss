@@ -41,11 +41,26 @@
         background: $color-lightest;
         border:1px solid $button-color;
         border-radius: 15px;
-        span{
-            position: relative;
-            top: -15px;
-            right: -3%;
+        @media (max-width:767px){
+            display:block;
+            height:60%;
+            overflow-y:scroll;
+        }
+        .close-icon{
+            position: absolute;
+            top: 19px;
+            right: 10px;
+            padding: 0;
+            font-size: 18px;
+            color: #000;
+            border: 0;
+            background: transparent;
             cursor: pointer;
+            @media (max-width:767px){
+                position: absolute;
+                top: 26px;
+                right: 13px;
+            }
         }
         li{
             white-space: pre-wrap;
